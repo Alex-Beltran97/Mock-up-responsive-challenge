@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap');
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+:root{
+  --primary-color: rgb(243,234,227);
+  --secondary-color: rgb(61,129,104);
+  --border-r:8px;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100%;
+  min-height: 100vh;
+  font-size: 14px;
+  background-color: var(--primary-color);
+}
+
+main{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+section{
+  margin: 1em;
+  border-radius: var(--border-r);
+  overflow: hidden;
+  background-color: white;
+}
+
+section figure img{
+  width:100%;
+}
+
+.product{
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 500;
+}
+
+.container-info{
+  height: 17em;
+  padding: 0.3em 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: 'Playfair Display', serif;
+}
+
+.container-info-text{
+  font-size: 0.8em;
+  font-family: sans-serif;
+}
+
+.prices-container{
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+
+.prices-container > p{
+  font-size: 0.8em;
+  text-decoration: line-through;
+}
+
+.prices-container > h2{
+  color: var(--secondary-color);
+  font-weight: 700;
+}
+
+button{
+  padding: 1em 0;
+  background-color: var(--secondary-color);
+  border: none;
+  color: white;
+  border-radius: var(--border-r);
+  cursor: pointer;
+}
+
+a{
+  color: royalblue;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+@media (min-width:768px) {
+  main{
+    height: 100vh;
+  }
+
+  section{
+    width: 80%;
+    margin: auto 0;
+  }
+}
+
+@media (min-width:1680px) {
+  main{
+    height: 100vh;
+  }
+
+  section{
+    width: 36%;
+    display: flex;
+    margin: auto 0;
+  }
+}
